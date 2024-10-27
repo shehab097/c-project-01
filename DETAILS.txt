@@ -1,0 +1,27 @@
+//TODO: scanf("%s", students[i].subjects.gpa);
+
+
+    //inputing maximum numbers of student
+    printf("Enter the number of students (max %d): ", MAX_STUDENTS);
+    int n;
+    scanf("%d", &n);
+
+
+    //Number of students exceeds the maximum limit 
+    if (n > MAX_STUDENTS) {
+        printf("Number of students exceeds the maximum limit of %d.\n", MAX_STUDENTS);
+        return 1;
+    }
+
+
+    //TODO:: Static array of student structures
+    student students[MAX_STUDENTS]; // Now, you can use `students[0]` to `students[n-1]` for processing student data.
+    
+
+    // Example of data entry
+    
+    for (int i = 0; i < n; i++) {
+        printf("Enter name for student %d: ", i + 1);
+        //TODO: scanf("%s", students[i].subjects.gpa);
+        // Additional code to enter marks, calculate GPA, etc.
+    }
